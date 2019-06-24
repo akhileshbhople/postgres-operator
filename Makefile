@@ -98,9 +98,9 @@ e2e-build:
 e2e-tools:
 	# install pinned version of 'kind' 
 	# leave the name as is to avoid overwriting official binary named `kind`
-	wget https://github.com/kubernetes-sigs/kind/releases/download/v0.3.0/kind-linux-amd64
-	chmod +x kind-linux-amd64
-	mv kind-linux-amd64 $(KIND_PATH)
+	wget https://github.com/kubernetes-sigs/kind/releases/download/v0.3.0/kind-linux-ppc64le
+	chmod +x kind-linux-ppc64le
+	mv kind-linux-ppc64le $(KIND_PATH)
 
 e2e-run: docker
 	e2e/run.sh
