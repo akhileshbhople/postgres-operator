@@ -13,7 +13,7 @@ RUN apt-get update \
            python3-pip \
            curl \
     && pip3 install --no-cache-dir -r requirements.txt \
-    && curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.14.0/bin/linux/amd64/kubectl \
+    && curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.14.0/bin/linux/ppc64le/kubectl \
     && chmod +x ./kubectl \
     && mv ./kubectl /usr/local/bin/kubectl \
     && apt-get clean \
