@@ -16,6 +16,7 @@ before_install:
   - go get github.com/mattn/goveralls
 
 install:
+  - pwd
   - make deps e2e-tools e2e-build
 
 script:
